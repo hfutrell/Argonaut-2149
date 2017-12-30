@@ -7,7 +7,7 @@
 //  Description:	The display class used to capture and manipulate a chosen 
 //			display.
 //
-//  Copyright © 2001-2002 by Alien Orb Software and The Author(s). All rights reserved.
+//  Copyright ï¿½ 2001-2002 by Alien Orb Software and The Author(s). All rights reserved.
 //
 //  Permission to use, copy, modify and distribute this source code and its 
 //  documentation is hereby granted, provided that both the copyright notice and this 
@@ -210,7 +210,7 @@ static DKDisplay *sharedInstance = nil;
 {
     CGDisplayErr err;
     DKGammaTable table;
-    CGTableCount sampleCount;
+    uint32_t sampleCount;
     
     err = CGGetDisplayTransferByTable( displayID, 256, table.red, table.green, table.blue, &sampleCount );
     if (err != kCGErrorSuccess)
