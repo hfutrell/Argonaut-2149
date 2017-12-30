@@ -38,12 +38,12 @@
 }
 
 -(id)init {
-
-    shouldDisplay = YES;
-    enabled=YES;
-    children = [[NSMutableArray alloc] init];
+    if (self = [super init]) {
+        shouldDisplay = YES;
+        enabled=YES;
+        children = [[NSMutableArray alloc] init];
+    }
     return self;
-    
 }
 
 -(float)timeSinceLastRender{
@@ -117,7 +117,8 @@
     [[NSNotificationCenter defaultCenter] removeObserver: self];
     [self removeAllChildren];
     [children release];
-    [super dealloc];
+#warning this super dealloc call is needed, but for some reason it makes the game crash after the loading screen is over. So temporarily disabled.
+//    [super dealloc];
 
 }
 
