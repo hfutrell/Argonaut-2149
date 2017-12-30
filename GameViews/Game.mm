@@ -328,8 +328,8 @@ static Game *sharedInstance;
         
         timeSinceLastControlSend+=FRAME;
         
-        unsigned char theKeyMap[16];
-        GetKeys( ( BigEndianLong * )theKeyMap );
+        KeyMap theKeyMap;
+        GetKeys( theKeyMap );
                 	        
         if ( IsKeyDown( theKeyMap, MAC_ARROW_RIGHT_KEY ) || IsKeyDown( theKeyMap, MAC_G_KEY )) {
 		
