@@ -1,0 +1,42 @@
+//Format:
+//"<New Powerup>"
+//Name
+//Description
+//Cost
+//Maximum
+
+<New Powerup>
+Shield Charge
++2 Shield level
+1
+100
+
+<New Powerup>
+Shield Restore
+Restores To Capacity
+12
+3
+
+<New Powerup>
+Crystal Magnet
+Pulls In Crystals
+8
+1
+
+<New Powerup>
+Mass-Seeker
+Attracted to mass
+1
+20
+
+<New Powerup>
+Dumb Missile
+Unguided Missile
+1
+20
+
+<New Powerup>
+Auto-Turret
+Drop for defense
+10
+5

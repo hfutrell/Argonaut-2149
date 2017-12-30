@@ -1,0 +1,10 @@
+Controls
+
+Up Arrow - Accelerate
+Down Arrow - Auto-break
+Left Arrow - Turn Left
+Right Arrow - Turn Right
+Spacebar - Fire
+z - Use / Toggle Secondary
+x or [ - Select Previous Secondary
+c or ] - Select Next Secondary

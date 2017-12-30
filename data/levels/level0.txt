@@ -1,0 +1,12 @@
+wait 1
+set title 120
+Level 1
+wait 3
+Play Music 0
+Asteroid doAction spawnSmall
+Asteroid doAction spawnSmall
+Asteroid doAction spawnMedium
+Asteroid doAction spawnMedium
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+On Notification AllAsteroidsDestroyed currentLevel doAction beatLevel

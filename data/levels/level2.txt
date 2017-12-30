@@ -1,0 +1,24 @@
+wait 1
+set title 120
+Level 3
+wait 2
+set title 120
+Scavengers
+
+wait 1
+Play Music 2
+
+On Notification Crystal_Spawned self doAction maybeSpawnGatherBot
+
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+Asteroid doAction spawnMedium
+Asteroid doAction spawnMedium
+GatherBot doAction spawn
+GatherBot doAction spawn
+GatherBot doAction spawn
+Asteroid doAction spawnSmall
+Asteroid doAction spawnSmall
+Asteroid doAction spawnLarge
+
+On Notification AllAsteroidsDestroyed currentLevel doAction beatLevel

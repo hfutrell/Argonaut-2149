@@ -1,0 +1,35 @@
+wait 1
+Play Music 0
+
+set title 120
+Level 4
+wait 2
+set title 120
+Ar!  There be pirates!
+
+On Notification Crystal_Spawned self doAction maybeSpawnGatherBot
+
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+Asteroid doAction spawnMedium
+Asteroid doAction spawnMedium
+Asteroid doAction spawnSmall
+Asteroid doAction spawnSmall
+wait 15
+Crystal doAction spawn
+Crystal doAction spawn
+Play Music 1
+wait 4
+Pirate doAction spawn
+wait 2
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+Asteroid doAction spawnMedium
+Asteroid doAction spawnMedium
+Asteroid doAction spawnSmall
+Asteroid doAction spawnSmall
+wait 10
+Pirate doAction spawn
+On Notification AllPiratesDestroyed Play Music 0
+
+On Notification AllAsteroidsDestroyed currentLevel doAction beatLevel

@@ -1,0 +1,20 @@
+wait 1
+Play Music 1
+set title 120
+Level 6
+set title 240
+Warning, Class <4> Incoming!
+On Crystal_Spawned self doAction maybeSpawnGatherBot
+wait 4
+Asteroid doAction spawnLarge
+Asteroid doAction spawnHuge
+wait 4
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+wait 5
+Pirate doAction spawn
+wait 20
+Pirate doAction spawn
+wait 5
+Asteroid doAction spawnHuge
+On Notification AllAsteroidsDestroyed currentLevel doAction beatLevel

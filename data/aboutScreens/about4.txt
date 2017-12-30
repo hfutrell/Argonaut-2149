@@ -1,0 +1,16 @@
+Credits
+
+Argonaut - 2149 version 1.2.0
+
+-Programming-
+Holmes Futrell
+
+-Artwork-
+Daniel Labriet
+    
+-Music-
+Miyaka Cochrane
+
+This game was originally entered in
+the uDevGame contest, visit iDevGames.com
+for more games!

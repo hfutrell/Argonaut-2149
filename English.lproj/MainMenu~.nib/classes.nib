@@ -1,0 +1,38 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                chooseMode = id; 
+                openTGATexture = id; 
+                toggleCulling = id; 
+                toggleLighting = id; 
+                toggleNormals = id; 
+                toggleTexture = id; 
+            }; 
+            CLASS = EnhancedGLView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSOpenGLView; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {setVideoMode = id; }; 
+            CLASS = GameController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {glWindow = NSWindow; }; 
+            SUPERCLASS = NSResponder; 
+        }, 
+        {
+            CLASS = GameView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {levelController = id; }; 
+            SUPERCLASS = EnhancedGLView; 
+        }, 
+        {
+            ACTIONS = {parseLine = id; }; 
+            CLASS = Level; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

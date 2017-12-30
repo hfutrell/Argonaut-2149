@@ -1,0 +1,34 @@
+set title 120
+Level 10
+wait 3
+Play Music 1
+Asteroid doAction spawnLarge
+Asteroid doAction spawnHuge
+wait 4
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+On Crystal_Spawned self doAction maybeSpawnGatherBot
+wait 20
+Pirate doAction spawn
+wait 5
+Asteroid doAction spawnHuge
+Asteroid doAction spawnLarge
+Asteroid doAction spawnHuge
+Asteroid doAction spawnHuge
+Pirate doAction spawn
+wait 20
+wait 30
+Asteroid doAction spawnHuge
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+Pirate doAction spawn
+Pirate doAction spawn
+wait 40
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+Pirate doAction spawn
+Pirate doAction spawn
+On Notification AllAsteroidsDestroyed currentLevel doAction beatLevel
+

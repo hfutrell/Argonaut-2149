@@ -1,0 +1,67 @@
+wait 1
+Play Music 1
+set title 120
+Level 8
+wait 4
+set title 120
+Argonauts vs Pirates
+wait 3
+On Crystal_Spawned self doAction maybeSpawnGatherBot
+Asteroid doAction spawnLarge
+Asteroid doAction spawnSmall
+Asteroid doAction spawnMedium
+Asteroid doAction spawnMedium
+Asteroid doAction spawnSmall
+Asteroid doAction spawnMedium
+wait 1
+Argonaut doAction spawn
+Argonaut doAction spawn
+wait 5
+Asteroid doAction spawnSmall
+Asteroid doAction spawnSmall
+Asteroid doAction spawnSmall
+wait 2
+Asteroid doAction spawnMedium
+Asteroid doAction spawnLarge
+Asteroid doAction spawnSmall
+Asteroid doAction spawnSmall
+Asteroid doAction spawnLarge
+Asteroid doAction spawnMedium
+wait 3
+Asteroid doAction spawnSmall
+Asteroid doAction spawnLarge
+Pirate doAction spawn
+wait 2
+Asteroid doAction spawnMedium
+Asteroid doAction spawnLarge
+Asteroid doAction spawnSmall
+Asteroid doAction spawnSmall
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+wait 5
+Asteroid doAction spawnSmall
+wait 4
+Asteroid doAction spawnSmall
+Asteroid doAction spawnMedium
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+On Notification AllAsteroidsDestroyed currentLevel doAction beatLevel
+wait 20 
+Asteroid doAction spawnSmall
+Asteroid doAction spawnMedium
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+Pirate doAction spawn
+Pirate doAction spawn
+wait 30
+Pirate doAction spawn
+Asteroid doAction spawnMedium
+Asteroid doAction spawnLarge
+Asteroid doAction spawnLarge
+wait 10
+Pirate doAction spawn
+wait 5
+Pirate doAction spawn
+On Notification AllPiratesDestroyed Play Music 0
+
+

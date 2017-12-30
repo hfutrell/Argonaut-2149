@@ -1,0 +1,73 @@
+wait 1
+set title 120
+Level 14
+wait 4
+set title 120
+The Abyss
+Play Music 2
+wait 3
+On Crystal_Spawned self doAction maybeSpawnGatherBot
+Asteroid doAction spawnLarge
+Asteroid doAction spawnSmall
+Asteroid doAction spawnMedium
+Asteroid doAction spawnMedium
+Asteroid doAction spawnHuge
+Asteroid doAction spawnHuge
+Argonaut doAction spawn
+Argonaut doAction spawn
+Argonaut doAction spawn
+Argonaut doAction spawn
+wait 10
+Asteroid doAction spawnLarge
+Asteroid doAction spawnSmall
+Asteroid doAction spawnMedium
+Asteroid doAction spawnMedium
+Asteroid doAction spawnHuge
+GatherBot doAction spawn
+GatherBot doAction spawn
+GatherBot doAction spawn
+GatherBot doAction spawn
+wait 6
+DreadPirate doAction spawn
+wait 4
+DreadPirate doAction spawn
+wait 4
+DreadPirate doAction spawn
+Asteroid doAction spawnSmall
+Asteroid doAction spawnSmall
+Asteroid doAction spawnHuge
+wait 2
+Asteroid doAction spawnSmall
+Asteroid doAction spawnSmall
+Asteroid doAction spawnHuge
+wait 3
+Asteroid doAction spawnSmall
+Asteroid doAction spawnHuge
+wait 2
+Asteroid doAction spawnLarge
+Asteroid doAction spawnHuge
+wait 5
+Asteroid doAction spawnSmall
+wait 20
+set title 120
+Lookout!
+DreadPirate doAction spawn
+wait 5
+DreadPirate doAction spawn
+wait 5
+DreadPirate doAction spawn
+Asteroid doAction spawnSmall
+Asteroid doAction spawnMedium
+Asteroid doAction spawnLarge
+wait 20 
+Asteroid doAction spawnSmall
+Asteroid doAction spawnMedium
+Asteroid doAction spawnLarge
+On Notification AllPiratesDestroyed Play Music 0
+On Notification AllAsteroidsDestroyed currentLevel doAction beatLevel
+DreadPirate doAction spawn
+wait 5
+DreadPirate doAction spawn
+
+
+

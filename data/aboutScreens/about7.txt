@@ -1,0 +1,6 @@
+Quotes
+Things only programmers will appreciate
+
+"C++ is Cocoa--"
+-Dan
+
