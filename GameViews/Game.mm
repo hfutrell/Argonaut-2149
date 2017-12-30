@@ -328,9 +328,10 @@ static Game *sharedInstance;
         
         timeSinceLastControlSend+=FRAME;
         
-        KeyMap theKeyMap;
-        GetKeys( theKeyMap );
-                	        
+        KeyMap keys;
+        GetKeys( keys );
+          
+        unsigned char *theKeyMap = (unsigned char *)(&keys);
         if ( IsKeyDown( theKeyMap, MAC_ARROW_RIGHT_KEY ) || IsKeyDown( theKeyMap, MAC_G_KEY )) {
 		
                 [playerShip turnLeft];
