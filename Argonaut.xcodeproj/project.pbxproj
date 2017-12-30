@@ -708,7 +708,7 @@
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.1;
-				SDKROOT = /Developer/SDKs/MacOSX10.3.sdk;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};
@@ -720,7 +720,7 @@
 					i386,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = iphoneos;
 			};
 			name = Deployment;
 		};
@@ -729,7 +729,7 @@
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.1;
-				SDKROOT = /Developer/SDKs/MacOSX10.3.sdk;
+				SDKROOT = macosx;
 			};
 			name = Default;
 		};
@@ -755,6 +755,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-Argonaut__Upgraded_.plist";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FMOD";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "Argonaut - 2149";
@@ -790,6 +791,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-Argonaut__Upgraded_.plist";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FMOD";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "Argonaut - 2149";
@@ -822,6 +824,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-Argonaut__Upgraded_.plist";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FMOD";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "Argonaut - 2149";
