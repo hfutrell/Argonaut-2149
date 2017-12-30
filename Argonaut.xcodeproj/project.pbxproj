@@ -107,9 +107,10 @@
 		FD330D000D3AED0600E4A75C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD330CFF0D3AED0600E4A75C /* Foundation.framework */; };
 		FD330D800D3AED0C00E4A75C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD330D7F0D3AED0C00E4A75C /* AppKit.framework */; };
 		FD330E270D3AED1900E4A75C /* libfmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD330E250D3AED1900E4A75C /* libfmod.a */; };
-		FD330E280D3AED1900E4A75C /* libfmodx86.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD330E260D3AED1900E4A75C /* libfmodx86.a */; };
 		FD330E470D3AED4B00E4A75C /* GLTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = FD330E460D3AED4B00E4A75C /* GLTexture.h */; };
 		FD330E550D3AEDCB00E4A75C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD330E540D3AEDCB00E4A75C /* OpenGL.framework */; };
+		FDF0660F1FF85AC800123308 /* libfmodx86.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF0660D1FF85AC800123308 /* libfmodx86.a */; };
+		FDF066121FF85B1F00123308 /* workaround.c in Sources */ = {isa = PBXBuildFile; fileRef = FDF066101FF85B1F00123308 /* workaround.c */; };
 		FDFDDB9F0D45565B00B8D662 /* DisplayKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFDDB950D45565B00B8D662 /* DisplayKit.h */; };
 		FDFDDBA00D45565B00B8D662 /* DKDisplay-DKGammaFadingExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFDDB990D45565B00B8D662 /* DKDisplay-DKGammaFadingExtras.m */; };
 		FDFDDBA10D45565B00B8D662 /* DKDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFDDB9A0D45565B00B8D662 /* DKDisplay.h */; };
@@ -236,6 +237,9 @@
 		FD9E6C2E0CF5329600E1B09F /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		FD9E6C330CF5329F00E1B09F /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		FD9E6C340CF5329F00E1B09F /* Common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Common.c; sourceTree = "<group>"; };
+		FDF0660C1FF85AC800123308 /* libfmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod.a; sourceTree = "<group>"; };
+		FDF0660D1FF85AC800123308 /* libfmodx86.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodx86.a; sourceTree = "<group>"; };
+		FDF066101FF85B1F00123308 /* workaround.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = workaround.c; sourceTree = "<group>"; };
 		FDFDDB950D45565B00B8D662 /* DisplayKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayKit.h; sourceTree = "<group>"; };
 		FDFDDB990D45565B00B8D662 /* DKDisplay-DKGammaFadingExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DKDisplay-DKGammaFadingExtras.m"; sourceTree = "<group>"; };
 		FDFDDB9A0D45565B00B8D662 /* DKDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKDisplay.h; sourceTree = "<group>"; };
@@ -253,7 +257,7 @@
 				FD330D000D3AED0600E4A75C /* Foundation.framework in Frameworks */,
 				FD330D800D3AED0C00E4A75C /* AppKit.framework in Frameworks */,
 				FD330E270D3AED1900E4A75C /* libfmod.a in Frameworks */,
-				FD330E280D3AED1900E4A75C /* libfmodx86.a in Frameworks */,
+				FDF0660F1FF85AC800123308 /* libfmodx86.a in Frameworks */,
 				FD330E550D3AEDCB00E4A75C /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +315,9 @@
 				887827CB04EE17FD00D4E92A /* GameViews */,
 				32CA4F630368D1EE00C91783 /* Argonaut_Prefix.h */,
 				29B97316FDCFA39411CA2CEA /* main.mm */,
+				FDF066101FF85B1F00123308 /* workaround.c */,
+				FDF0660C1FF85AC800123308 /* libfmod.a */,
+				FDF0660D1FF85AC800123308 /* libfmodx86.a */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -672,6 +679,7 @@
 				FD3309CE0D3AEA7100E4A75C /* Missile.m in Sources */,
 				FD3309CF0D3AEA7100E4A75C /* WeaponStore.mm in Sources */,
 				FD3309D00D3AEA7100E4A75C /* PreferenceController.m in Sources */,
+				FDF066121FF85B1F00123308 /* workaround.c in Sources */,
 				FD3309D10D3AEA7100E4A75C /* PrefsWindow.m in Sources */,
 				FD3309D40D3AEA7100E4A75C /* Mesh.m in Sources */,
 				FD3309D50D3AEA7100E4A75C /* Model.m in Sources */,
@@ -750,7 +758,10 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-Argonaut__Upgraded_.plist";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FMOD";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/FMOD",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -783,7 +794,10 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-Argonaut__Upgraded_.plist";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FMOD";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/FMOD",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -812,7 +826,10 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-Argonaut__Upgraded_.plist";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FMOD";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/FMOD",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
