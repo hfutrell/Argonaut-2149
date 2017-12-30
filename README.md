@@ -1,6 +1,10 @@
-**Important**: Argonaut 2149's is open-source software but its **license disallows commercial use**. See License.txt.
+**Important**: Argonaut 2149 is open-source software but its **license disallows commercial use**. See License.txt.
+
+![Title Screen](screenshots/argonaut1.jpg)
 
 Argonaut 2149 is a game where you can join the lucrative trade of crystal mining! Navigate through deadly asteroid fields, do battle with menacing pirates and greedy scavengers, and gather wealth for the purchase of powerful weapons and power-ups in this arcade style asteroids game.
+
+![Battle Screen](screenshots/argonaut2.jpg)
 
 The game was first published in 2003 and won "Best Overall Game" in the uDevGames competition. It was last updated in 2007 and version 1.2.1 was made available as a Universal application for both PowerPC and x86 based Macs running Mac OS X 10.4 and later.
 
