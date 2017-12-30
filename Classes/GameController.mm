@@ -18,7 +18,7 @@
 #import <unistd.h>
 #import <DisplayKit.h>
 
-@interface GameController (InternalMethods)
+@interface GameController (InternalMethods)<NSApplicationDelegate>
 - (void) setupRenderTimer;
 - (void) updateGLView:(NSTimer *)timer;
 @end
